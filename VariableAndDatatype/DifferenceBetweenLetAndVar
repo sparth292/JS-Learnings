@@ -1,0 +1,9 @@
+The key difference between var and let in JavaScript lies in their scope, 
+hoisting behavior, and re-declaration rules. var is function-scoped, meaning it is accessible throughout the entire function in which it is declared, 
+even outside blocks. On the other hand, let is block-scoped, 
+meaning it is only accessible within the block {} where it is defined. 
+When it comes to hoisting, both are hoisted, but var is initialized as undefined, 
+while let remains uninitialized, causing a ReferenceError if accessed before declaration. 
+Additionally, var allows re-declaration within the same scope, whereas let does not. 
+Another difference is that var creates a property on the global window object in browsers, while let does not. 
+Because of these issues with var, modern JavaScript prefers using let for better scoping and fewer unexpected behaviors.
